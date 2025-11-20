@@ -93,6 +93,40 @@ All colors MUST be HSL.
   .hover-lift {
     @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl;
   }
+
+  .skill-card {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .skill-card:nth-child(2n) {
+    animation-delay: 1s;
+  }
+
+  .skill-card:nth-child(3n) {
+    animation-delay: 2s;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .skill-icon-wrapper {
+    animation: rotate-slow 20s linear infinite;
+  }
+
+  @keyframes rotate-slow {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 }
 
 @layer base {
