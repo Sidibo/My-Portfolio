@@ -5,19 +5,21 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "Project One",
-      description: "A full-stack web application built with React, Node.js, and MongoDB. Features include user authentication, real-time updates, and responsive design.",
-      tags: ["React", "Node.js", "MongoDB"],
+      title: "EcoClean Hub",
+      description: "A smart waste management platform that uses AI to detect bin fill-levels and auto-schedule pickups. Completed collections are stored on Ethereum for full transparency. Includes citizen request portal, officer dashboard, and live tracking map.",
+      tags: ["AI", "Ethereum", "Smart Management"],
+      githubUrl: "https://github.com/Sidibo/Eco_Clean_Hub.git",
     },
     {
-      title: "Project Two",
-      description: "Modern e-commerce platform with Next.js and Express. Includes payment integration, cart management, and admin dashboard.",
-      tags: ["Next.js", "Express", "MongoDB"],
+      title: "WeatherWise",
+      description: "Fast, reliable local forecasts with current conditions, hourly and 7-day outlooks, interactive radar, and intelligent alerts. Clean UI, low data usage, and quick access to the info you need to plan your day — rain or shine.",
+      tags: ["React", "Weather API", "JavaScript"],
+      githubUrl: "https://github.com/Sidibo/Weather-Checking-Website",
     },
     {
-      title: "Project Three",
-      description: "Interactive data visualization dashboard using React and Python. Features real-time analytics and customizable charts.",
-      tags: ["React", "Python", "JavaScript"],
+      title: "Project In Progress",
+      description: "Exciting new project currently under development. Stay tuned for updates!",
+      tags: ["Coming Soon"],
     },
   ];
 
@@ -51,17 +53,23 @@ const Projects = () => {
                   ))}
                 </div>
                 <div className="flex gap-2">
-                  <Button
-                    size="sm"
-                    variant="outline"
-                    className="flex-1 border-primary/50 hover:bg-primary/10"
-                  >
-                    <Github className="w-4 h-4 mr-2" />
-                    Code
-                  </Button>
+                  {project.githubUrl && (
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      className="flex-1 border-primary/50 hover:bg-primary/10"
+                      asChild
+                    >
+                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                        <Github className="w-4 h-4 mr-2" />
+                        Code
+                      </a>
+                    </Button>
+                  )}
                   <Button
                     size="sm"
                     className="flex-1 bg-primary hover:bg-primary/90"
+                    disabled={!project.githubUrl}
                   >
                     <ExternalLink className="w-4 h-4 mr-2" />
                     Demo
