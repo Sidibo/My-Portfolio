@@ -8,42 +8,42 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 220 25% 10%;
-    --foreground: 210 40% 98%;
+    --background: 250 30% 10%;
+    --foreground: 280 10% 98%;
 
-    --card: 220 20% 15%;
-    --card-foreground: 210 40% 98%;
+    --card: 250 25% 15%;
+    --card-foreground: 280 10% 98%;
 
-    --popover: 220 20% 15%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 250 25% 15%;
+    --popover-foreground: 280 10% 98%;
 
-    --primary: 210 100% 50%;
+    --primary: 280 80% 60%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 15% 20%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 250 20% 20%;
+    --secondary-foreground: 280 10% 98%;
 
-    --muted: 220 15% 25%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 250 20% 25%;
+    --muted-foreground: 260 15% 70%;
 
-    --accent: 190 100% 50%;
-    --accent-foreground: 220 25% 10%;
+    --accent: 320 85% 65%;
+    --accent-foreground: 250 30% 10%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 280 10% 98%;
 
-    --border: 220 15% 25%;
-    --input: 220 15% 25%;
-    --ring: 210 100% 50%;
+    --border: 250 20% 25%;
+    --input: 250 20% 25%;
+    --ring: 280 80% 60%;
 
     --radius: 0.75rem;
 
     /* Portfolio specific tokens */
-    --hero-gradient-from: 210 100% 50%;
-    --hero-gradient-to: 190 100% 50%;
-    --card-hover: 220 15% 18%;
-    --skill-bg: 220 15% 20%;
-    --skill-hover: 220 15% 25%;
+    --hero-gradient-from: 280 80% 60%;
+    --hero-gradient-to: 320 85% 65%;
+    --card-hover: 250 20% 18%;
+    --skill-bg: 250 20% 20%;
+    --skill-hover: 250 20% 25%;
   }
 }
 
